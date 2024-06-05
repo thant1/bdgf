@@ -1,0 +1,257 @@
+body {
+    font-family: 'Comfortaa';
+    font-size: 22px;
+    background-color: #CBC3E3;
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    padding: 7% 12%;
+}
+
+.in-container {
+    display: inline-block;
+}
+
+.in-container .hey {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-right: 5px solid;
+    width: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13), cursor .4s step-end infinite alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; border-color: transparent; }
+}
+
+.in-container .hap {
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-right: 5px solid;
+    width: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(14), cursor .4s step-end infinite alternate;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    color: #ffffff;
+    font-size: 110px;
+    letter-spacing: 3px;
+    margin-block-start: 60px;
+    margin-block-end: 60px;
+}
+
+.in-container .i {
+    font-weight: 900;
+    border-right: 5px solid;
+    width: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 6s steps(63), cursor .4s step-end infinite alternate;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    font-size: 25px;
+}
+
+.in-container .so {
+    font-weight: 900;
+    border-right: 5px solid;
+    width: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30), cursor .4s step-end infinite alternate;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+    font-size: 25px;
+}
+
+.trans-p-c, .trans-l-p, .trans-p-la, .trans-c-l {
+    height: 200px;
+    width: 100%;
+}
+
+.trans-p-c {
+    background-image: linear-gradient(to bottom, #d7f5d4, #a6e3b4);
+}
+
+.trans-l-p, .trans-c-l {
+    background-image: linear-gradient(to bottom, #d7f5d4, #a6e3b4);
+}
+
+.trans-p-la {
+    background-image: linear-gradient(to bottom, #a6e3b4, #d7f5d4);
+}
+
+.container-cotton {
+    background-color: #CBC3E3;
+    padding: 16% 16%;
+}
+
+.container-cotton p {
+    font-size: 25px;
+}
+
+.container-cotton font {
+    font-size: 120px;
+    margin-right: 10px;
+    font-weight: 900;
+    color: white;
+}
+
+.clock-holder {
+    margin: 60px 0;
+}
+
+.container-lum {
+    background-color: #e0bfbf;
+    padding: 16% 8%;
+    position: relative;
+}
+
+.first_photo {
+    height: 400px;
+    width: 400px;
+    margin-left: 70%;
+}
+
+.container-lum video {
+    margin-top: -200px;
+}
+
+.love {
+    height: 150px;
+    width: 400px;
+    position: absolute;
+    left: 37%;
+    top: 40%;
+    transform: rotate(-20deg);
+}
+
+.container-lum p {
+    font-size: 30px;
+}
+
+.container {
+    padding: 16% 16%;
+}
+
+.container p {
+    font-size: 25px;
+}
+
+.card {
+    height: 350px;
+    width: 250px;
+    background-color: #afcdaa;
+    color: white;
+    padding: 40px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.card.fade-out {
+    opacity: 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.card h2 {
+    width: fit-content;
+    font-size: 50px;
+    display: none;
+}
+
+.card p {
+    display: none;
+}
+
+.card font {
+    margin-top: 120px;
+    display: block;
+    font-size: 80px;
+    text-align: center;
+}
+
+.card.show font {
+    display: none;
+}
+
+.card.show p, .card.show h2 {
+    display: block;
+}
+
+.container-lavender {
+    background-color: #ddf3db;
+    padding: 16%;
+}
+
+.birthday-wishes {
+    text-align: justify;
+}
+
+.cake {
+    width: 400px;
+    height: 400px;
+    margin-left: 30%;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 10% 5%;
+    }
+
+    .in-container .hap {
+        font-size: 80px;
+        margin-block-start: 30px;
+        margin-block-end: 30px;
+    }
+
+    .container-cotton {
+        padding: 10% 5%;
+    }
+
+    .first_photo, .cake {
+        height: 200px;
+        width: 200px;
+        margin-left: 0;
+    }
+
+    .container-lum {
+        padding: 10% 5%;
+    }
+
+    .container-lavender {
+        padding: 10% 5%;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
